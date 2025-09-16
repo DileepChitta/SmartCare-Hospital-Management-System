@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Hospital App
 
 Express + EJS hospital app with appointments, doctors, blog, and auth.
@@ -63,3 +64,6 @@ npm run dev
 
 ## License
 MIT
+=======
+# SmartCare-Hospital-Management-System
+>>>>>>> 5e3e565774fa526cfc55f48e8d99b46800ba903f
