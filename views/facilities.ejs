@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hospital Facilities</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="/">🏥 HealthCare</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="/home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="/services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="/facilities">Facilities</a></li>
+          <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Banner -->
+  <section class="py-5 text-center bg-light">
+    <div class="container">
+      <h1 class="fw-bold text-primary">Our Facilities</h1>
+      <p class="lead text-muted">Delivering care with advanced technology & patient comfort</p>
+    </div>
+  </section>
+
+  <!-- Facilities Section -->
+  <section id="facilities" class="py-5 bg-light">
+    <div class="container">
+      <!-- Section Title -->
+      <div class="text-center mb-5">
+        <h2 class="fw-bold text-primary">Our Facilities</h2>
+        <p class="text-muted">Providing world-class facilities with advanced technology and patient comfort in mind.</p>
+      </div>
+
+      <!-- Facilities Gallery -->
+      <div class="row g-4">
+        <!-- Facility 1 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card shadow-sm border-0 h-100">
+            <img src="/assets/icu.jpg" class="card-img-top " alt="ICU">
+            <div class="card-body text-center">
+              <h5 class="fw-bold">Modern ICU</h5>
+              <p class="text-muted small">24/7 monitoring with advanced life-support systems.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Facility 2 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card shadow-sm border-0 h-100">
+            <img src="/assets/operation.jpg" class="card-img-top rounded" alt="Operation Theater">
+            <div class="card-body text-center">
+              <h5 class="fw-bold">Advanced Operation Theaters</h5>
+              <p class="text-muted small">Cutting-edge surgical facilities for safe operations.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Facility 3 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card shadow-sm border-0 h-100">
+            <img src="/assets/testinglaboratory.jpg" class="card-img-top rounded" alt="Diagnostic Lab">
+            <div class="card-body text-center">
+              <h5 class="fw-bold">Diagnostic Laboratories</h5>
+              <p class="text-muted small">Accurate testing and quick reports for better care.</p>
+            </div>
+          </div>
+        </div>
+ 
+        <!-- Facility 4 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card shadow-sm border-0 h-100">
+            <img src="/assets/radioandimaging.jpg" class="card-img-top rounded" alt="Radiology">
+            <div class="card-body text-center">
+              <h5 class="fw-bold">Radiology & Imaging</h5>
+              <p class="text-muted small">MRI, CT, X-Ray & Ultrasound with high precision.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Facility 5 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card shadow-sm border-0 h-100">
+            <img src="/assets/ambulance.jpg" class="card-img-top rounded" alt="Ambulance">
+            <div class="card-body text-center">
+              <h5 class="fw-bold">24/7 Ambulance</h5>
+              <p class="text-muted small">Emergency transport service, always ready.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Facility 6 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card shadow-sm border-0 h-100">
+            <img src="/assets/waitinglongue.jpg" class="card-img-top rounded" alt="Waiting Lounge">
+            <div class="card-body text-center">
+              <h5 class="fw-bold">Patient Waiting Lounge</h5>
+              <p class="text-muted small">Comfortable lounges for patients & visitors.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Button -->
+      <div class="text-center mt-5">
+        <a href="/contact" class="btn btn-primary rounded-pill px-4">Know More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-primary text-white text-center py-3">
+    <p class="mb-0">&copy; <%= new Date().getFullYear() %> HealthCare Hospital. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

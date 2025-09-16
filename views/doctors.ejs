@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Doctors - Hospital</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .doctor-card {
+      border-radius: 12px;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .doctor-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+    }
+    footer {
+      background: #0d6efd;
+      color: white;
+      padding: 20px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🌐 Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="/">🏥 My Hospital</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="/home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="/departments">Departments</a></li>
+          <li class="nav-item"><a class="nav-link active" href="/doctors">Doctors</a></li>
+          <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="/login">Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 👨‍⚕ Doctors Section -->
+  <!-- <section id="doctors" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-4 text-primary">Meet Our Doctors</h2>
+      <p class="text-center text-muted mb-5">
+        Experienced, compassionate, and dedicated professionals at your service.
+      </p>
+
+      
+    </div>
+  </section>
+
+<section id="doctors" class="py-5 bg-light">
+    <div class="container">
+          <div class="col-md-4 col-lg-3">
+            <div class="card h-100 border-0 shadow doctor-card">
+              <img src="/assets/dileep.jpg" class="card-img-top" alt="Doctor Name" 
+                   style="height: 250px; object-fit: cover;">
+              <div class="card-body text-center">
+                <h5 class="fw-bold text-dark mb-1">Dr. Arjun Mehta</h5>
+                <p class="text-muted small">Cardiologist</p>
+                <a href="Doctor name" class="btn btn-sm btn-outline-primary rounded-pill">Book Appointment</a>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+  <section id="doctors" class="py-5 bg-light">
+    <div class="container">
+          <div class="col-md-4 col-lg-3">
+            <div class="card h-100 border-0 shadow doctor-card">
+              <img src="/assets/dileep.jpg" class="card-img-top" alt="Doctor Name" 
+                   style="height: 250px; object-fit: cover;">
+              <div class="card-body text-center">
+                <h5 class="fw-bold text-dark mb-1">Dr. Priya Sharma</h5>
+                <p class="text-muted small">Neurologist</p>
+                <a href="Doctor name" class="btn btn-sm btn-outline-primary rounded-pill">Book Appointment</a>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+  <section id="doctors" class="py-5 bg-light">
+    <div class="container">
+          <div class="col-md-4 col-lg-3">
+            <div class="card h-100 border-0 shadow doctor-card">
+              <img src="/assets/dileep.jpg" class="card-img-top" alt="Doctor Name" 
+                   style="height: 250px; object-fit: cover;">
+              <div class="card-body text-center">
+                <h5 class="fw-bold text-dark mb-1">Dr. Rakesh Kumar</h5>
+                <p class="text-muted small">Orthopedic Surgeon</p>
+                <a href="Doctor name" class="btn btn-sm btn-outline-primary rounded-pill">Book Appointment</a>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+  <section id="doctors" class="py-5 bg-light">
+    <div class="container">
+          <div class="col-md-4 col-lg-3">
+            <div class="card h-100 border-0 shadow doctor-card">
+              <img src="/assets/dileep.jpg" class="card-img-top" alt="Doctor Name" 
+                   style="height: 250px; object-fit: cover;">
+              <div class="card-body text-center">
+                <h5 class="fw-bold text-dark mb-1">Dr. Vikram Singh</h5>
+                <p class="text-muted small">Dermatologist</p>
+                <a href="Doctor name" class="btn btn-sm btn-outline-primary rounded-pill">Book Appointment</a>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+  <section id="doctors" class="py-5 bg-light">
+    <div class="container">
+          <div class="col-md-4 col-lg-3">
+            <div class="card h-100 border-0 shadow doctor-card">
+              <img src="/assets/dileep.jpg" class="card-img-top" alt="Doctor Name" 
+                   style="height: 250px; object-fit: cover;">
+              <div class="card-body text-center">
+                <h5 class="fw-bold text-dark mb-1">Dr. Ananya Patel</h5>
+                <p class="text-muted small">Pediatrician</p>
+                <a href="Doctor name" class="btn btn-sm btn-outline-primary rounded-pill">Book Appointment</a>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+  <section id="doctors" class="py-5 bg-light">
+    <div class="container">
+      <div class="row g-4">
+          <div class="col-md-4 col-lg-3">
+            <div class="card h-100 border-0 shadow doctor-card">
+              <img src="/assets/dileep.jpg" class="card-img-top" alt="Doctor Name" 
+                   style="height: 250px; object-fit: cover;">
+              <div class="card-body text-center">
+                <h5 class="fw-bold text-dark mb-1">Dr. Sneha Reddy</h5>
+                <p class="text-muted small">Emergency Medicine</p>
+                <a href="Doctor name" class="btn btn-sm btn-outline-primary rounded-pill">Book Appointment</a>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section> -->
+
+  <section id="doctors" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-4 text-primary">Meet Our Doctors</h2>
+      <p class="text-center text-muted mb-5">
+        Experienced, compassionate, and dedicated professionals at your service.
+      </p>
+
+      <div class="row g-4">
+        <% const doctors = [
+          { name: "Dr. Arjun Mehta", specialty: "Cardiologist", img: "/assets/dileep.jpeg" },
+          { name: "Dr. Priya Sharma", specialty: "Neurologist", img: "/assets/dileep.jpeg" },
+          { name: "Dr. Rakesh Kumar", specialty: "Orthopedic Surgeon", img: "/assets/dileep.jpeg" },
+          { name: "Dr. Ananya Patel", specialty: "Pediatrician", img: "/assets/dileep.jpeg" }
+         
+        ]; %>
+
+        <% doctors.forEach(doc => { %>
+          <div class="col-md-4 col-lg-3">
+            <div class="card h-100 border-0 shadow doctor-card">
+              <img src="<%= doc.img %>" class="card-img-top" alt="<%= doc.name %>" 
+                   style="height: 250px; object-fit: cover;">
+              <div class="card-body text-center">
+                <h5 class="fw-bold text-dark mb-1"><%= doc.name %></h5>
+                <p class="text-muted small"><%= doc.specialty %></p>
+                <a href="#" class="btn btn-sm btn-outline-primary rounded-pill">Book Appointment</a>
+              </div>
+            </div>
+          </div>
+        <% }); %>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- 📌 Footer -->
+  <footer class="text-center">
+    <div class="container">
+      <p class="mb-0">&copy; <%= new Date().getFullYear() %> My Hospital. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

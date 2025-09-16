@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+       <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="/">My Hospital</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="/home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+          <li class="nav-item"><a class="nav-link active" href="/departments">Departments</a></li>
+          <li class="nav-item"><a class="nav-link" href="/doctors">Doctors</a></li>
+          <li class="nav-item"><a class="nav-link" href="/blog">News</a></li>
+          <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <section id="departments" class="py-5" style="background: #f9fafa;">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-4 text-primary">Our Medical Departments</h2>
+    <p class="text-center text-muted mb-5" style="font-size: 20px;color: black;"><bold>Comprehensive healthcare services with world-class facilities.</bold></p>
+
+    <div class="row g-4">
+
+      <!-- <% const departments = [
+        { name: "Cardiology", desc: "Heart and vascular treatments with advanced care.", img: "/assets/cardiology.jpg" },
+        { name: "Neurology", desc: "Brain & nervous system diagnostics and therapies.", img: "/assets/neurology.jpg" },
+        { name: "Orthopedics", desc: "Bone, joint, and muscle treatments for all ages.", img: "/assets/orthopedics.jpg" },
+        { name: "Pediatrics", desc: "Compassionate care for infants, children, and teens.", img: "/assets/pediatrics.jpg" },
+        { name: "Emergency", desc: "24/7 emergency and trauma response unit.", img: "/assets/emergency.jpg" },
+        { name: "Dermatology", desc: "Expert skin, hair, and cosmetic treatments.", img: "/assets/dermatology.jpg" }
+      ]; %>
+
+      <% departments.forEach(dept => { %>
+        <section class="bg-primary text-white py-3">
+    <div class="container text-center">
+      <h2 class="mb-4"><%= dept.name %></h2>
+      <div class="row">
+        <div class="col-md-3 mb-3">
+          <div class="card h-100 shadow-sm border-0 dept-card">
+             <a href="/<%=dept.name %>" >
+               <img src="<%= dept.img %>" class="card-img-top" alt="<%= dept.name %>" style="height: 200px; object-fit: cover; border-radius: 10px 10px 0 0;">
+             </a>
+           
+            <div class="card-body text-center">
+              <p class="text-muted small"><%= dept.desc %></p>
+            </div>
+          </div>
+
+        </div>
+        </div>
+     </div>
+  </section>
+      <% }); %> -->
+
+  <section class="bg-primary text-white py-4" style="border-radius: 20px;">
+    <div class="container">
+      <h2 class="mb-4 text-center">Cardiology</h2>
+      <div class="row d-flex align-items-center">
+        <div class="col-md-3 text-center">
+          <div class="card h-100 border-0 dept-card"  style="box-shadow: 10px 10px 20px 10px #000000f4;">
+             <a href="/departments" >
+               <img src="/assets/cardiology.jpg" class="card-img-top" alt="Cardiology" style="height: 200px; object-fit: cover; border-radius: 10px 10px 0 0;">
+             </a>
+           
+            <div class="card-body text-center">
+              <p class="text-muted small"><bold style="font-size: 15px;color: black;">Heart and vascular treatments with advanced care.</bold></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8 px-5">
+        <p class="mb-0" style="font-size: 18px;">
+Cardiology is the medical specialty devoted to the study, diagnosis, and treatment of heart and blood vessel disorders. Cardiologists focus on conditions such as coronary artery disease, heart failure, arrhythmias, hypertension, and congenital heart defects. This field combines preventive care with advanced interventions, including echocardiography, angioplasty, and pacemaker implantation, to improve patient outcomes. By emphasizing early detection and lifestyle modifications, cardiology helps reduce the risk of life-threatening events like heart attacks and strokes. With rapid advances in technology and treatment methods, cardiology continues to play a vital role in promoting heart health and saving lives worldwide.
+        </div>
+     </div>
+  </section>
+  <br>
+  <section class="bg-primary text-white py-4" style="border-radius: 20px;">
+    <div class="container">
+      <h2 class="mb-4 text-center">Neurology</h2>
+      <div class="row d-flex align-items-center">
+        <div class="col-md-3 text-center">
+          <div class="card h-100 border-0 dept-card" style="box-shadow: 10px 10px 20px 10px #000000f4;">
+             <a href="/departments" >
+               <img src="/assets/neurology.jpg" class="card-img-top" alt="Neurology" style="height: 200px; object-fit: cover; border-radius: 10px 10px 0 0;">
+             </a>
+           
+            <div class="card-body text-center">
+              <p class="text-muted small"><bold style="font-size: 15px;color:black">Brain & nervous system diagnostics and therapies.</bold></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8 px-5">
+        <p class="mb-0" style="font-size: 18px;">
+Neurology is the branch of medicine dedicated to diagnosing and treating disorders of the brain, spinal cord, and nervous system. Neurologists care for patients with conditions such as stroke, epilepsy, migraines, multiple sclerosis, Parkinson’s disease, and neuropathies. They use advanced diagnostic tools like EEG, MRI, and CT scans to identify complex neurological problems. Treatments may involve medication, lifestyle changes, or advanced therapies tailored to each patient’s needs. Neurology plays a vital role in improving cognitive and motor functions, enhancing quality of life, and providing preventive care for at-risk patients through early detection and effective management of neurological diseases.        </p>
+      </div>
+
+        </div>
+     </div>
+  </section>
+  <br>
+  <section class="bg-primary text-white py-4" style="border-radius: 20px;">
+    <div class="container">
+      <h2 class="mb-4 text-center">Orthopedics</h2>
+      <div class="row d-flex align-items-center">
+        <div class="col-md-3 text-center">
+          <div class="card h-100 border-0 dept-card" style="box-shadow: 10px 10px 20px 10px #000000f4;">
+             <a href="/departments" >
+               <img src="/assets/orthopedics.jpg" class="card-img-top" alt="Orthopedic" style="height: 200px; object-fit: cover; border-radius: 10px 10px 0 0;">
+             </a>
+           
+            <div class="card-body text-center">
+              <p class="text-muted small"><bold style="font-size: 15px;color: black;">Bone, joint, and muscle treatments for all ages.</bold></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8 px-5">
+        <p class="mb-0" style="font-size: 18px;">
+Orthopedics is the medical specialty focused on diagnosing, treating, and preventing conditions related to the bones, joints, muscles, ligaments, and tendons. Orthopedic doctors, also known as orthopedists, manage a wide range of problems, including fractures, arthritis, sports injuries, spinal disorders, and congenital deformities. Treatment may involve medication, physiotherapy, minimally invasive procedures, or surgery such as joint replacement. Orthopedics also emphasizes rehabilitation and restoring mobility to improve quality of life. With advancements in surgical techniques and modern technology, orthopedic care helps patients recover faster, regain strength, and return to daily activities with confidence and reduced pain.        </p>
+      </div>
+
+        </div>
+     </div>
+  </section>
+  <br>
+<section class="bg-primary text-white py-4" style="border-radius: 20px;">
+    <div class="container">
+      <h2 class="mb-4 text-center">Pediatrics</h2>
+      <div class="row d-flex align-items-center">
+        <div class="col-md-3 text-center">
+          <div class="card h-100 border-0 dept-card" style="box-shadow: 10px 10px 20px 10px #000000f4;">
+             <a href="/departments" >
+               <img src="/assets/pediatrics.jpg" class="card-img-top" alt="Pediatrics" style="height: 200px; object-fit: cover; border-radius: 10px 10px 0 0;">
+             </a>
+           
+            <div class="card-body text-center">
+              <p class="text-muted small"><bold style="font-size: 15px;color: black;">Compassionate care for infants, children, and teens.</bold></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8 px-5">
+        <p class="mb-0" style="font-size: 18px;">
+Pediatrics is the branch of medicine that focuses on the health and medical care of infants, children, and adolescents. Pediatricians are trained to diagnose, treat, and prevent childhood illnesses ranging from common colds and infections to chronic conditions like asthma, diabetes, and congenital disorders. They also monitor growth, development, nutrition, and mental health, ensuring children achieve their full potential. Preventive care, including immunizations and regular checkups, is a major part of pediatrics. Pediatricians work closely with families to promote healthy lifestyles, provide guidance, and offer compassionate care, making pediatrics vital for nurturing healthier generations and ensuring lifelong well-being.        </p>
+      </div>
+
+        </div>
+     </div>
+  </section>
+  <br>
+  <section class="bg-primary text-white py-4" style="border-radius: 20px;">
+    <div class="container">
+      <h2 class="mb-4 text-center">Emergency</h2>
+      <div class="row d-flex align-items-center">
+        <div class="col-md-3 text-center">
+          <div class="card h-100 border-0 dept-card" style="box-shadow: 10px 10px 20px 10px #000000f4;">
+             <a href="/departments" >
+               <img src="/assets/emergency.jpg" class="card-img-top" alt="Emergency" style="height: 200px; object-fit: cover; border-radius: 10px 10px 0 0;">
+             </a>
+           
+            <div class="card-body text-center">
+              <p class="text-muted small"><bold style="font-size: 15px;color: black;">24/7 emergency and trauma response unit.</bold></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8 px-5">
+        <p class="mb-0" style="font-size: 18px;">
+Emergency Medicine is a critical specialty that focuses on the immediate care of patients facing urgent and life-threatening conditions. Emergency physicians are trained to handle a wide range of medical crises, including heart attacks, strokes, trauma, respiratory distress, and severe infections. The department operates 24/7, ensuring rapid assessment, stabilization, and treatment. Using advanced diagnostic tools and life-saving interventions, emergency teams work under intense pressure to deliver quick, effective care. Their goal is to save lives, reduce complications, and provide immediate relief, making emergency medicine the frontline of healthcare when every second counts.        </p>
+      </div>
+
+        </div>
+     </div>
+  </section>
+  <br>
+  <section class="bg-primary text-white py-4" style="border-radius: 20px;">
+    <div class="container">
+      <h2 class="mb-4 text-center">Dermatology</h2>
+      <div class="row d-flex align-items-center">
+        <div class="col-md-3 text-center">
+          <div class="card h-100 border-0 dept-card" style="box-shadow: 10px 10px 20px 10px #000000f4;">
+             <a href="/departments" >
+               <img src="/assets/dermatology.jpg" class="card-img-top" alt="Dermatology" style="height: 200px; object-fit: cover; border-radius: 10px 10px 0 0;">
+             </a>
+           
+            <div class="card-body text-center">
+              <p class="text-muted small"><bold style="font-size: 15px;color: black;">Expert skin, hair, and cosmetic treatments.</bold></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8 px-5">
+        <p class="mb-0" style="font-size: 18px;">
+Dermatology is the branch of medicine that focuses on the skin, hair, and nails. Dermatologists diagnose and treat a wide range of conditions, including acne, eczema, psoriasis, fungal infections, skin cancer, and hair loss. They also perform cosmetic procedures such as laser treatments, chemical peels, and skin rejuvenation. Diagnosis may involve physical examination, biopsy, or laboratory tests. Dermatology emphasizes both medical treatment and aesthetic care, aiming to maintain healthy skin while improving appearance. Preventive measures, early detection, and patient education are key, as healthy skin contributes not only to physical well-being but also to confidence and overall quality of life.        </p>
+      </div>
+
+        </div>
+     </div>
+  </section>
+
+<!-- <style>
+  .dept-card {
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .dept-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+  }
+</style> -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

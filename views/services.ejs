@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hospital Website - Patient Services</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+    }
+    #services h2 {
+      font-size: 2rem;
+    }
+    .card {
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-primary shadow-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-white" href="/">My Hospital</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+              data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" 
+              aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto fw-semibold">
+          <li class="nav-item"><a class="nav-link" href="/home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="/services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="/doctors">Doctors</a></li>
+          <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Patient Services Section -->
+  <section id="services" class="py-5 bg-light">
+    <div class="container">
+      <!-- Section Title -->
+      <div class="text-center mb-5">
+        <h2 class="fw-bold text-primary">Our Patient Services</h2>
+        <p class="text-muted">We are dedicated to delivering the best healthcare and support to our patients.</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Service Card 1 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm border-0 rounded">
+            <div class="card-body text-center">
+              <i class="bi bi-hospital fs-1 text-primary mb-3"></i>
+              <h5 class="fw-bold">24/7 Emergency Care</h5>
+              <p class="text-muted small">Our emergency department is open round-the-clock with expert doctors and staff ready to assist anytime.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service Card 2 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm border-0 rounded">
+            <div class="card-body text-center">
+              <i class="bi bi-person-heart fs-1 text-primary mb-3"></i>
+              <h5 class="fw-bold">Personalized Treatment</h5>
+              <p class="text-muted small">We provide patient-focused care tailored to meet individual health needs with compassion and excellence.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service Card 3 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm border-0 rounded">
+            <div class="card-body text-center">
+              <i class="bi bi-capsule fs-1 text-primary mb-3"></i>
+              <h5 class="fw-bold">Pharmacy Support</h5>
+              <p class="text-muted small">Our in-house pharmacy ensures availability of prescribed medicines and proper guidance on usage.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service Card 4 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm border-0 rounded">
+            <div class="card-body text-center">
+              <i class="bi bi-heart-pulse fs-1 text-primary mb-3"></i>
+              <h5 class="fw-bold">Health Checkups</h5>
+              <p class="text-muted small">Comprehensive health checkup packages for early detection and prevention of diseases.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service Card 5 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm border-0 rounded">
+            <div class="card-body text-center">
+              <i class="bi bi-people fs-1 text-primary mb-3"></i>
+              <h5 class="fw-bold">Counseling & Support</h5>
+              <p class="text-muted small">Our expert counselors provide mental health support and guidance for patients and families.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service Card 6 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm border-0 rounded">
+            <div class="card-body text-center">
+              <i class="bi bi-house-heart fs-1 text-primary mb-3"></i>
+              <h5 class="fw-bold">Home Care Services</h5>
+              <p class="text-muted small">Professional care at home for elderly and recovering patients, ensuring comfort and safety.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Button -->
+      <div class="text-center mt-5">
+        <a href="/contact" class="btn btn-primary rounded-pill px-4">Explore More Services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-light py-3 mt-5">
+    <div class="container text-center">
+      <small>&copy; 2025 My Hospital | All Rights Reserved</small>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
